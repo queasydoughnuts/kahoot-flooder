@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Kahoot Flooder - Smash kahoots with thosands of bots.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Flood Kahoots with thosands of bots for free! Kahoot spammer.">
+	<link id="favicon" rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<br><br><br><br><br><br>
+      <div id="top">
+         <br><br><br><br>
+         <img src="/logo.png"></img>
+         <br>
+         <main>
+            <div id="firstForm">
+               <input id="name" style="display: none;" type="text" value="error" readonly>
+               <input id="pin" name="dream" maxlength="100" type="number" placeholder="Game PIN" onkeyup="if(this.value.length > 0) document.getElementById('btn1').disabled = false; else document.getElementById('btn1').disabled = true;">
+               <button type="button" id="btn1" disabled onclick="applyForm()"><b>Continue</b></button>
+            </div>
+            <div id="secondForm">
+               <input id="amount" onkeyup="if(this.value.length > 0) document.getElementById('send').disabled = false; else document.getElementById('send').disabled = true;" name="num" maxlength="2" placeholder="Bot Count" type="number"></input>
+               <button id="send" disabled onclick="send()"><b>Flood!</b></button>
+            </div>
+         </main>
+      </div>
+      <noscript>
+         <div class="nojs">We're sorry, some features of this site require JavaScript to run. Please enable scripts for the best experience.</div>
+      </noscript>
+      <div id="error">We're sorry, but that game pin seems to be invalid. Please try another pin. Thanks!</div>
+      <div id="error2">We're sorry, but in order to use our service, you may not add more than 1,000 bots. Thanks!</div>
+      <div id="success">Kahoot has been successfully flooded! The bots will automatically answer.</div>
+      <text class="currentv">v1.3</text>
+      <br><br><br><br><br><br><br><br>
+      <div class="createcontainer2">
+      <div class="createcontainer">
+         <div class="create">Deploy thosands of bots to infiltrate<br class="mobilehide"> and take over any public Kahoot game!<br><br></div>
+         <div class="createcontainer">
+            <div class="create1">
+               Kahoot Flooder - brought to you by <strong>Riley Jones</strong>.
+            </div>
+         </div>
+      </div>
+      <script src="/index.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   </body>
+</html>
